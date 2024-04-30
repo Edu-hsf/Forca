@@ -5,7 +5,6 @@ let keyWord = '';
 let formattedKeyWord = '';
 let lifeBarWidth = 100;
 
-alert('ok')
 function playAgain() {
     window.location.href = 'game.html';
 }
