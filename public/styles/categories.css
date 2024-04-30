@@ -15,6 +15,8 @@ body .main-categories {
   align-items: center;
   background: rgb(88, 7, 116);
   background: linear-gradient(193deg, rgb(88, 7, 116) 19%, rgb(255, 0, 251) 62%, rgb(0, 0, 0) 93%);
+  background-image: linear-gradient(to button);
+  background-attachment: fixed;
   padding: 120px;
   padding-top: 50px;
 }
@@ -99,11 +101,14 @@ body .main-categories .appear {
 @media screen and (max-width: 888px) {
   body .main-categories header .title {
     text-align: end;
+    font-size: 45px;
   }
-}
-@media screen and (max-width: 720px) {
   body .main-categories .categories {
-    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+  }
+  body .main-categories .categories button {
+    height: 100px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -116,6 +121,7 @@ body .main-categories .appear {
   body .main-categories {
     padding: 20px;
     padding-top: 30px;
+    height: auto;
   }
   body .main-categories header {
     align-items: start;
@@ -132,7 +138,14 @@ body .main-categories .appear {
     height: 100px;
   }
 }
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 425px) {
+  body .main-categories header .button-back .back {
+    width: 55px;
+    height: 55px;
+  }
+  body .main-categories header .button-back .back img {
+    width: 35px;
+  }
   body .main-categories header .title {
     font-size: 30px;
   }
@@ -144,19 +157,24 @@ body .main-categories .appear {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
   body .main-categories header .button-back .back {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
   }
   body .main-categories header .button-back .back img {
-    width: 35px;
+    width: 30px;
   }
-}
-@media screen and (max-width: 330px) {
   body .main-categories header .title {
     font-size: 27px;
     -webkit-text-stroke: 2px #2b082e;
+  }
+  body .main-categories .categories {
+    gap: 20px;
+  }
+  body .main-categories .categories button {
+    height: 70px;
+    font-size: 27px;
   }
 }
 

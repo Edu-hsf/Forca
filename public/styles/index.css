@@ -12,7 +12,7 @@ body .main-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/montanha-com-o-ceu-roxo-da-noite-no-fundo_18047-35.avif");
+  background-image: url("/public/images/montanha-com-o-ceu-roxo-da-noite-no-fundo_18047-35.avif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -39,7 +39,6 @@ body .main-menu .container-main header .game-title {
   position: relative;
   top: -145px;
   background-image: linear-gradient(#000ba5, #f84ccd);
-  -webkit-text-stroke: 1px;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -142,8 +141,27 @@ body .main-menu .appear {
   }
 }
 @media screen and (max-width: 536px) {
+  body .main-menu .container-main header {
+    height: 90px;
+  }
+  body .main-menu .container-main header .game-title {
+    font-size: 130px;
+    top: -100px;
+    -webkit-text-stroke: 4px #2b082e;
+  }
+  body .main-menu .container-main .menu-buttons .play-button button {
+    width: 160px;
+    height: 90px;
+    font-size: 50px;
+  }
+  body .main-menu .container-main .menu-buttons .guide-button button {
+    width: 250px;
+    height: 60px;
+    font-size: 35px;
+  }
   body .main-menu .container-main .guide {
     font-size: 30px;
+    margin-top: 50px;
   }
   body .main-menu .container-main .guide ol {
     padding: 20px;
@@ -156,26 +174,20 @@ body .main-menu .appear {
     margin-top: 20px;
   }
 }
-@media screen and (max-width: 480px) {
-  body main .container-main {
-    height: 400px;
+@media screen and (max-width: 425px) {
+  body .main-menu .container-main header .game-title {
+    font-size: 105px;
+    top: -80px;
   }
-  body main .container-main header {
-    height: 110px;
-  }
-  body main .container-main header .game-title {
-    font-size: 150px;
-    top: -125px;
-  }
-}
-@media screen and (max-width: 420px) {
   body .main-menu .container-main .menu-buttons .play-button button {
-    font-size: 60px;
+    width: 140px;
+    height: 80px;
+    font-size: 45px;
   }
   body .main-menu .container-main .menu-buttons .guide-button button {
-    width: 250px;
-    height: 60px;
-    font-size: 36px;
+    width: 230px;
+    height: 50px;
+    font-size: 30px;
   }
   body .main-menu .container-main .guide {
     font-size: 25px;
@@ -190,6 +202,16 @@ body .main-menu .appear {
   body main .container-main header .game-title {
     font-size: 135px;
     top: -110px;
+  }
+}
+@media screen and (max-width: 340px) {
+  body .main-menu .container-main .guide {
+    font-size: 23px;
+  }
+  body .main-menu .container-main .guide .close-guide {
+    width: 200px;
+    font-size: 25px;
+    margin-top: 20px;
   }
 }
 @keyframes pulsing {

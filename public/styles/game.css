@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(../images/background-game.jpg);
+  background-image: url(/public/images/background-game.jpg);
   padding: 9%;
   padding-top: 0;
   position: relative;
@@ -88,15 +88,16 @@ body .main-game .key-words {
 }
 body .main-game .key-words .word {
   display: flex;
+  flex-wrap: wrap;
   margin: 50px;
   margin-bottom: 10px;
   margin-top: 0;
   color: #ffffff;
 }
 body .main-game .key-words .word .letter {
-  margin: 10px;
-  width: 100px;
-  height: 100px;
+  margin: 8px;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,6 +352,8 @@ body .appear {
   body .main-game header .name-category {
     width: 100%;
     text-align: end;
+    font-size: 60px;
+    -webkit-text-stroke: 4px #2b082e;
   }
   body .main-game header .button-back button {
     width: 60px;
@@ -360,8 +363,15 @@ body .appear {
     width: 35px;
   }
   body .main-game header .player-life {
-    top: 150px;
+    top: 160px;
     right: 45px;
+  }
+  body .main-game header .player-life img {
+    width: 50px;
+  }
+  body .main-game header .player-life .life-bar {
+    width: 200px;
+    margin-left: 15px;
   }
   body .main-game header .position-header {
     width: 0;
@@ -376,6 +386,70 @@ body .appear {
   }
   body .main-game .alphabet {
     margin-top: 60px;
+  }
+}
+@media screen and (max-width: 900px) {
+  body .game-over {
+    width: 450px;
+    height: 400px;
+  }
+  body .game-over .title {
+    font-size: 40px;
+    bottom: 60px;
+    -webkit-text-stroke: 3px #2b082e;
+  }
+  body .game-over .buttons {
+    position: relative;
+    top: -50px;
+  }
+  body .game-over .buttons button {
+    margin-bottom: 10px;
+  }
+  body .game-over .buttons .play-again {
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+  }
+  body .game-over .buttons .back-to-categories {
+    width: 150px;
+    height: 70px;
+    font-size: 25px;
+  }
+  body .game-over .buttons .quit-game {
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+  }
+  body .you-win {
+    width: 450px;
+    height: 400px;
+  }
+  body .you-win .title {
+    font-size: 40px;
+    bottom: 60px;
+    -webkit-text-stroke: 3px #2b082e;
+  }
+  body .you-win .buttons {
+    position: relative;
+    top: -50px;
+  }
+  body .you-win .buttons button {
+    margin-bottom: 10px;
+  }
+  body .you-win .buttons .play-again {
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+  }
+  body .you-win .buttons .back-to-categories {
+    width: 150px;
+    height: 70px;
+    font-size: 25px;
+  }
+  body .you-win .buttons .quit-game {
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
   }
 }
 @media screen and (max-width: 735px) {
@@ -463,6 +537,66 @@ body .appear {
     height: 35px;
     font-size: 20px;
   }
+  body .game-over {
+    width: 300px;
+  }
+  body .game-over .title {
+    font-size: 30px;
+    bottom: 45px;
+    -webkit-text-stroke: 1.8px #2b082e;
+  }
+  body .game-over .buttons {
+    position: relative;
+    top: -50px;
+  }
+  body .game-over .buttons button {
+    margin-bottom: 10px;
+  }
+  body .game-over .buttons .play-again {
+    width: 165px;
+    height: 60px;
+    font-size: 30px;
+  }
+  body .game-over .buttons .back-to-categories {
+    width: 115px;
+    height: 60px;
+    font-size: 23px;
+  }
+  body .game-over .buttons .quit-game {
+    width: 165px;
+    height: 60px;
+    font-size: 30px;
+  }
+  body .you-win {
+    width: 300px;
+  }
+  body .you-win .title {
+    font-size: 30px;
+    bottom: 45px;
+    -webkit-text-stroke: 1.8px #2b082e;
+  }
+  body .you-win .buttons {
+    position: relative;
+    top: -50px;
+  }
+  body .you-win .buttons button {
+    margin-bottom: 10px;
+  }
+  body .you-win .buttons .play-again {
+    width: 165px;
+    height: 60px;
+    font-size: 30px;
+  }
+  body .you-win .buttons .back-to-categories {
+    width: 115px;
+    height: 60px;
+    font-size: 23px;
+  }
+  body .you-win .buttons .quit-game {
+    width: 165px;
+    height: 60px;
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 350px) {
   body .main-game .key-words .word {
@@ -484,6 +618,23 @@ body .appear {
     height: 10px;
     width: 140px;
     margin-left: 13px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .main-game header .button-back button {
+    width: 45px;
+    height: 45px;
+  }
+  body .main-game header .button-back button img {
+    width: 25px;
+  }
+}
+@media screen and (max-height: 630px) {
+  body .main-game .key-words {
+    margin-top: 70px;
+  }
+  body .main-game .alphabet {
+    margin-top: 30px;
   }
 }
 @keyframes anima {
