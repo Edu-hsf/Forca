@@ -4,7 +4,6 @@ document.querySelector('.name-category h1').innerText = category;
 let keyWord = '';
 let formattedKeyWord = '';
 let lifeBarWidth = 100;
-
 function playAgain() {
     window.location.href = 'game.html';
 }
@@ -155,7 +154,11 @@ function gameOver() {
         document.querySelector('.main-game').style.display = 'none';
         document.querySelector('.game-over').removeAttribute('style');
         setTimeout(() => {
-            document.querySelector('.game-over').classList.add('appear');
+            const gameOverElement = document.querySelector('.game-over');
+            gameOverElement.classList.add('appear');
+            gameOverElement.querySelector('.back-to-categories').addEventListener('click', backToCategories);
+            gameOverElement.querySelector('.play-again').addEventListener('click', playAgain);
+            gameOverElement.querySelector('.quit-game').addEventListener('click', quitGame);
         }, 500);
     }
 }
@@ -172,16 +175,17 @@ function youWin() {
         document.querySelector('.main-game').style.display = 'none';
         document.querySelector('.you-win').removeAttribute('style');
         setTimeout(() => {
-            document.querySelector('.you-win').classList.add('appear');
+            const youWinElement = document.querySelector('.you-win');
+            youWinElement.classList.add('appear');
+            youWinElement.querySelector('.back-to-categories').addEventListener('click', backToCategories);
+            youWinElement.querySelector('.play-again').addEventListener('click', playAgain);
+            youWinElement.querySelector('.quit-game').addEventListener('click', quitGame);
         }, 1000);
     }
 }
+createKeyWord();
 document.addEventListener('keyup', checkLetterByKeyboard);
 document.querySelector('.button-back').addEventListener('click', backToCategories);
-document.querySelector('.back-to-categories').addEventListener('click', backToCategories);
-document.querySelector('.play-again').addEventListener('click', playAgain);
-document.querySelector('.quit-game').addEventListener('click', quitGame);
-createKeyWord();
 document.querySelector('.alphabet').querySelectorAll('.letter').forEach(element => {
     element.addEventListener('click', checkLetter);
 });

@@ -188,7 +188,11 @@ function gameOver () {
         document.querySelector<HTMLElement>('.game-over')!.removeAttribute('style')
         
         setTimeout(() => {
-            document.querySelector<HTMLElement>('.game-over')!.classList.add('appear');
+            const gameOverElement = document.querySelector<HTMLElement>('.game-over')!
+            gameOverElement.classList.add('appear');
+            gameOverElement.querySelector('.back-to-categories')!.addEventListener('click', backToCategories)
+            gameOverElement.querySelector('.play-again')!.addEventListener('click', playAgain)
+            gameOverElement.querySelector('.quit-game')!.addEventListener('click', quitGame)
         }, 500);
     } 
 }
@@ -207,18 +211,19 @@ function youWin () {
         document.querySelector<HTMLElement>('.main-game')!.style.display = 'none'
         document.querySelector<HTMLElement>('.you-win')!.removeAttribute('style')
         setTimeout(() => {
-            document.querySelector<HTMLElement>('.you-win')!.classList.add('appear');
+            const youWinElement = document.querySelector<HTMLElement>('.you-win')!
+            youWinElement.classList.add('appear');
+            youWinElement.querySelector('.back-to-categories')!.addEventListener('click', backToCategories)
+            youWinElement.querySelector('.play-again')!.addEventListener('click', playAgain)
+            youWinElement.querySelector('.quit-game')!.addEventListener('click', quitGame)
         }, 1000);
         
     }
 }
 
+createKeyWord()
 document.addEventListener('keyup', checkLetterByKeyboard)
 document.querySelector('.button-back')!.addEventListener('click', backToCategories)
-document.querySelector('.back-to-categories')!.addEventListener('click', backToCategories)
-document.querySelector('.play-again')!.addEventListener('click', playAgain)
-document.querySelector('.quit-game')!.addEventListener('click', quitGame)
-createKeyWord()
 document.querySelector<HTMLElement>('.alphabet')!.querySelectorAll<HTMLElement>('.letter').forEach(element => {
     element.addEventListener('click', checkLetter)
 });
