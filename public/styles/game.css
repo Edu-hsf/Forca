@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(/public/images/background-game.jpg);
+  background-image: url(../images/background-game.jpg);
   padding: 9%;
   padding-top: 0;
   position: relative;

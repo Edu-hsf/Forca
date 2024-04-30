@@ -4,6 +4,8 @@ document.querySelector('.name-category h1').innerText = category;
 let keyWord = '';
 let formattedKeyWord = '';
 let lifeBarWidth = 100;
+
+alert('ok')
 function playAgain() {
     window.location.href = 'game.html';
 }
