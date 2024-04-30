@@ -1,6 +1,6 @@
 "use strict";
 function backToMenu() {
-    window.location.href = 'menu.html';
+    window.location.href = 'index.html';
 }
 function redirectToGame(category) {
     window.localStorage.setItem('category', category);

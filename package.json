@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc --watch",
-    "sass-menu": "sass --watch ./src/styles/menu.scss ./public/styles/menu.css",
+    "sass-index": "sass --watch ./src/styles/index.scss ./public/styles/index.css",
     "sass-categories": "sass --watch ./src/styles/categories.scss ./public/styles/categories.css",
     "sass-game": "sass --watch ./src/styles/game.scss ./public/styles/game.css"
   },

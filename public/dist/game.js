@@ -11,7 +11,7 @@ function backToCategories() {
     window.location.href = 'categories.html';
 }
 function quitGame() {
-    window.location.href = 'menu.html';
+    window.location.href = 'index.html';
 }
 function generateKeyWord() {
     switch (category) {
