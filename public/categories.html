@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/categories.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-categories">
+      <header>
+        <div onclick="backToMenu()" class="button-back"
+        ><button class="back"><img src="images/arrowbackimperfact-removebg-preview.png"></button>
+        </div>
+        <div class="title"><h1>Escolha uma Categoria</h1></div>
+        <div></div>
+      </header>
+      <section class="categories">
+        <button onclick="redirectToGame('Esportes')" class="sports-category">ESPORTES</button>
+        <button onclick="redirectToGame('Filmes')" class="movies-category">FILMES</button>
+        <button onclick="redirectToGame('Programas')" class="tv-shows-category">PROGRAMAS DE TV</button>
+        <button onclick="redirectToGame('Anime')" class="anime-category">ANIME</button>
+        <button onclick="redirectToGame('Países')" class="countries-category">PAÍSES</button>
+        <button onclick="redirectToGame('Capitais')" class="capital-cities-category">CAPITAIS</button>
+        <button onclick="redirectToGame('Animais')" class="animals-category">ANIMAIS</button>
+        <button onclick="redirectToGame('Comidas')" class="foods-category">COMIDAS</button>
+        <button onclick="redirectToGame('Marcas')" class="brands-category">MARCAS</button>
+      </section>
+    </main>
+    <script src="dist/categories.js"></script>
+</body>
+</html>

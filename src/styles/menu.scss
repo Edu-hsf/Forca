@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mouse Memoirs";
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    .main-menu {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/public/images/montanha-com-o-ceu-roxo-da-noite-no-fundo_18047-35.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .container-main {
+            height: 500px;
+            width: 700px;
+            background-color: rgba(172, 23, 218, 0.562);
+            border-radius: 40px; 
+            border: solid 2px rgb(136, 27, 158);
+            border-bottom: solid 10px rgb(58, 9, 68);
+            opacity: 0;
+            transition: opacity 1s;
+            
+            header {
+                text-align: center;
+                width: 100%;
+                height: 150px;
+    
+                .game-title {
+                    font-family: "Mouse Memoirs", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 180px;
+                    position: relative;
+                    top: -145px;
+    
+                    background-image: linear-gradient(#000ba5, #f84ccd);
+                    -webkit-text-stroke: 1px ;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+    
+                    -webkit-text-stroke: 6px #2b082e;
+                }
+            }
+    
+            .menu-buttons {
+                width: 100%;
+                height: 350px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+    
+                .play-button {
+                    margin-bottom: 80px;
+                    
+                    button {
+                        width: 200px;
+                        height:100px;
+                        font-size: 70px;
+                        border-radius: 20px;
+                        border: none;
+                        background-image: linear-gradient(#6d07cc, #39046b);
+                        color: white;
+                        box-shadow: 1px 4px 13px #3d3c3c;
+                        &:hover {
+                            cursor: pointer;
+                            animation-name: pulsing;
+                            animation-duration: 0.5s;
+                            animation-timing-function: ease-out;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate;
+                            background-image: linear-gradient(#9d35ff, #39046b);
+                        }
+                    }
+                }
+    
+                .guide-button {
+                    button {
+                        width: 300px;
+                        height: 60px;
+                        font-size: 40px;
+                        border-radius: 50px;
+                        background-image: linear-gradient(#ff05ea,#1e094e);
+                        border: none;
+                        box-shadow: 1px 4px 13px #3d3c3c;
+                        color: #fff;
+                        &:hover {
+                            cursor: pointer;
+                            animation-name: pulsing;
+                            animation-duration: 0.5s;
+                            animation-timing-function: ease-out;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate;
+                            
+                        }
+                    }
+                }
+            }
+
+            .guide {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                font-size: 35px;
+                position: relative;
+                top: -90px;
+                color: #32027e;
+                font-weight: bolder;
+
+                ol {
+                    width: 100%;
+                    padding: 50px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    li {
+                        list-style-position: inside;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .close-guide {
+                    width: 300px;
+                    height: 50px;
+                    border-radius: 20px;
+                    border: none;
+                    font-size: 30px;
+                    color: #fff;
+                    background-color: #2d00f8;
+                    margin-top: 10px;
+
+                    &:hover {
+                        background-color: #4701eb;
+                        cursor: pointer;  
+                    }
+                }
+            }
+        }
+        .appear {
+            opacity: 1;
+        }
+    }
+    
+} 
+
+@media screen and (max-width: 750px) {
+    body main {
+        padding: 30px;
+        .container-main {
+            .container-main {
+                height: 800px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 536px) {
+    body .main-menu {
+        .container-main {
+            .guide {
+                font-size: 30px;
+                ol {
+                    padding: 20px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+
+                .close-guide {
+                    width: 250px;
+                    font-size: 27px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body main {
+        .container-main {
+            height: 400px;
+
+            header {
+                height: 110px;
+                .game-title {
+                    font-size: 150px;
+                    top: -125px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body .main-menu {
+        .container-main {
+            .menu-buttons {
+                .play-button {
+                    button {
+                        font-size: 60px;
+                    }
+                }
+                .guide-button {
+                    button {
+                        width: 250px;
+                        height: 60px;
+                        font-size: 36px;
+                    }
+                } 
+            }
+
+            .guide {
+                font-size: 25px;
+                
+                ol {
+                    padding: 20px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body main {
+        .container-main {
+            header {
+                .game-title {
+                    font-size: 135px;
+                    top: -110px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulsing {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes reverseBackGround {
+    0% {
+        background-image: linear-gradient(#ff05ea,#1e094e);       
+    }
+
+    100% {
+        background-image: linear-gradient(#1e094e, #ff05ea);
+    }
+   
+}

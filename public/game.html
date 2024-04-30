@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="https://kit.fontawesome.com/193cd4f580.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-game">
+        <header>
+            <div class="button-back"><button><img src="images/arrowbackimperfact-removebg-preview.png"></button></div>
+            
+            <div class="name-category">
+                <h1></h1>
+            </div>
+
+            <div class="position-header"></div>
+
+            <div class="player-life">
+                <img src="images/heart.png">
+                <div class="life-bar">
+                    <div class="remaining-life"></div>
+                </div>
+                
+            </div>
+            
+        </header>
+
+        <div class="key-words">
+        </div>
+
+        <div class="alphabet">
+            <button class="letter letter-A" data-letter="A">A</button>
+            <button class="letter letter-B" data-letter="B">B</button>
+            <button class="letter letter-C" data-letter="C">C</button>
+            <button class="letter letter-D" data-letter="D">D</button>
+            <button class="letter letter-E" data-letter="E">E</button>
+            <button class="letter letter-F" data-letter="F">F</button>
+            <button class="letter letter-G" data-letter="G">G</button>
+            <button class="letter letter-H" data-letter="H">H</button>
+            <button class="letter letter-I" data-letter="I">I</button>
+            <button class="letter letter-J" data-letter="J">J</button>
+            <button class="letter letter-K" data-letter="K">K</button>
+            <button class="letter letter-L" data-letter="L">L</button>
+            <button class="letter letter-M" data-letter="M">M</button>
+            <button class="letter letter-N" data-letter="N">N</button>
+            <button class="letter letter-O" data-letter="O">O</button>
+            <button class="letter letter-P" data-letter="P">P</button>
+            <button class="letter letter-Q" data-letter="Q">Q</button>
+            <button class="letter letter-R" data-letter="R">R</button>
+            <button class="letter letter-S" data-letter="S">S</button>
+            <button class="letter letter-T" data-letter="T">T</button>
+            <button class="letter letter-U" data-letter="U">U</button>
+            <button class="letter letter-V" data-letter="V">V</button>
+            <button class="letter letter-W" data-letter="W">W</button>
+            <button class="letter letter-X" data-letter="X">X</button>
+            <button class="letter letter-Y" data-letter="Y">Y</button>
+            <button class="letter letter-Z" data-letter="Z">Z</button>
+        </div>
+    </main>
+    <div class="game-over" style="display: none;">
+        <header class="title"><h1>Você Perdeu</h1></header>
+        <div class="buttons">
+            <button class="play-again">RECOMEÇAR</button>
+            <button class="back-to-categories">NOVA CATEGORIA</button>
+            <button class="quit-game">SAIR DO JOGO</button>
+        </div>
+        
+    </div>
+    <div class="you-win" style="display: none;">
+        <header class="title"><h1>You Win</h1></header>
+        <div class="buttons">
+            <button class="play-again">RECOMEÇAR</button>
+            <button class="back-to-categories">NOVA CATEGORIA</button>
+            <button class="quit-game">SAIR DO JOGO</button>
+        </div>
+    </div>
+    <script src="dist/game.js" type="module"></script>
+</body>
+</html>

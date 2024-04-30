@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="./styles/menu.css">
+    <!-- Fontes de texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main-menu">
+        <div class="container-main">
+            <header>
+                <span class="game-title">Forca</span>
+            </header>
+            <div class="menu-buttons">
+                <div class="play-button">
+                    <button onclick="redirectToCategories()">Play</button>
+                </div>
+                <div class="guide-button">
+                    <button>HOW TO PLAY</button>
+                </div>
+            </div>
+            <div class="guide" style="display: none;">
+                <ol>
+                    <li>Escolha uma categoria de palavras</li>
+                    <li>Escolha uma letra para tentar preencher os espaços vazios que correspondem a palavra secreta</li>
+                    <li>Você terá 5 chances. Se escolher a letra errada 5 vezes, perderá o jogo.</li>
+                    <li>Continue até adivinhar até adivinhar a palavra para vencer.</li>
+                </ol>
+                <button class="close-guide">Divirta-se!</button>
+            </div>
+        </div>
+    </main>
+    <script src="dist/menu.js"></script>
+</body>
+</html>

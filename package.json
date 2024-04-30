@@ -1,0 +1,26 @@
+{
+  "name": "forca",
+  "version": "1.0.0",
+  "description": "Jogo da forca programado em type script com um sistema interativo em HTML e CSS.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "sass-menu": "sass --watch ./src/styles/menu.scss ./public/styles/menu.css",
+    "sass-categories": "sass --watch ./src/styles/categories.scss ./public/styles/categories.css",
+    "sass-game": "sass --watch ./src/styles/game.scss ./public/styles/game.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edu-hsf/Forca.git"
+  },
+  "author": "Eduardo Henrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edu-hsf/Forca/issues"
+  },
+  "homepage": "https://github.com/Edu-hsf/Forca#readme",
+  "dependencies": {
+    "sass": "^1.74.1",
+    "sass-index": "^1.0.1"
+  }
+}

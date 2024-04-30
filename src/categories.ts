@@ -1,0 +1,11 @@
+function  backToMenu() {
+    window.location.href = 'menu.html'
+}
+
+function redirectToGame (category: string) {
+    window.localStorage.setItem('category', category)
+    window.location.href = 'game.html'
+}
+
+document.querySelector<HTMLElement>('header')!.classList.add('appear');
+document.querySelector<HTMLElement>('.categories')!.classList.add('appear');
