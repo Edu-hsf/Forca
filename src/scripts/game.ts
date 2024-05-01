@@ -228,3 +228,4 @@ document.querySelector<HTMLElement>('.alphabet')!.querySelectorAll<HTMLElement>(
     element.addEventListener('click', checkLetter)
 });
 document.querySelector<HTMLElement>('.main-game')!.classList.add('appear');
+document.querySelector<HTMLElement>('.key-word')!.textContent = `${keyWord}`

@@ -190,3 +190,4 @@ document.querySelector('.alphabet').querySelectorAll('.letter').forEach(element 
     element.addEventListener('click', checkLetter);
 });
 document.querySelector('.main-game').classList.add('appear');
+document.querySelector('.key-word').textContent = `${keyWord}`;
